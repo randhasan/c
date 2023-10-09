@@ -1,4 +1,4 @@
-Three programs that essentially read and write from files to convert a made-up container format known as a Compressed Bitmap Image to a Bitmap Image File.
+Three programs that essentially read and write files to convert a made-up container format known as a Compressed Bitmap Image to a Bitmap Image File.
 
 1. Program that can be called with the following displays both the CBM header and the palette:
 $ ./cbm2bmp --info image.cbm
