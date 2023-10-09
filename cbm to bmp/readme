@@ -1,0 +1,54 @@
+Three programs that essentially read and write from files to convert a made-up container format known as a Compressed Bitmap Image to a Bitmap Image File.
+
+1. Program that can be called with the following displays both the CBM header and the palette:
+$ ./cbm2bmp --info image.cbm
+=== CBM Header ===
+Magic: 0x7449
+Width: 958
+Height: 718
+Number of colors: 16
+Color array offset: 22
+Image array offset: 70
+
+=== Palette (R, G, B) ===
+Color 0: (24, 36, 21)
+Color 1: (37, 66, 26)
+Color 2: (56, 91, 41)
+Color 3: (77, 113, 63)
+Color 4: (5, 9, 5)
+Color 5: (53, 51, 49)
+Color 6: (102, 102, 103)
+Color 7: (75, 74, 72)
+Color 8: (104, 139, 86)
+Color 9: (176, 188, 219)
+Color 10: (150, 164, 172)
+Color 11: (127, 146, 128)
+Color 12: (123, 78, 204)
+Color 13: (198, 208, 129)
+Color 14: (219, 119, 118)
+Color 15: (163, 41, 75)
+
+2. Program that can be called with the following generates the bmp file from the argument:
+$ ./cbm2bmp --convert image.cbm image.bmp
+
+3. Program that can be called with the following displays both of the bmp headers:
+$ ./cbm2bmp --bmp-info image.bmp
+=== BMP Header ===
+Type: BM
+Size: 2073654
+Reserved 1: 0
+Reserved 2: 0
+Image offset: 54
+
+=== DIB Header ===
+Size: 40
+Width: 960
+Height: 720
+# color planes: 1
+# bits per pixel: 24
+Compression scheme: 0
+Image size: 0
+Horizontal resolution: 0
+Vertical resolution: 0
+# colors in palette: 0
+# important colors: 0
