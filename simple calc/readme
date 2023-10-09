@@ -1,0 +1,7 @@
+A program that reads a simple calculation from the keyboard, and prints the result.
+Enter your calculation:
+3 + 4     <- user input
+> 3 + 4 = 7
+Enter your calculation:
+3 c 4     <- user input
+Invalid calculation! "3 c 4"
